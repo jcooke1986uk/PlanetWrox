@@ -1,0 +1,12 @@
+﻿1. Name three important files in the Web Files category that you can add to your site.  Describe the purpose of each file.
+	a. Master Pages - A shell for the site which all the other pages inherit.  Web Form - The basis of each page for displaying code. CSS - For styling the website.
+	ANSWER: .aspx files. .css files. .html files. .config files.
+2. What do you need to do to make a piece of text both bold and italicized in your web page? What will the resulting HTML look like?
+	a. Use Formatting and press B and I or code it and use <strong></strong> and <em></em> in either order. <strong><em>Bold italic text</em></strong>
+	ANSWER: Correct, but didn't mention if using the formatting toolbar to select the text first; I just thought that was too obvious to mention.
+3. Name three differnt ways to add existing files to an ASP.NET website in VS.
+	a. Drag and drop them in. Right click and Add Existing Item.  Top menu, Website > Existing Item.
+	ANSWER: Correct but I didn't mention that the first two relate to the Solution Explorer.
+4. What are the different views that VS offers you for your ASPX pages?  Does VS offer other views as well?
+	a. Design, Source and a Mix of both.  Probably offers more but it's already got two more than I need.
+	ANSWER: Correct but Mix is called Split View.  Code Behind files also offer Code Behind View.  I'm not convinced on that, code behind view is just source/code view - I feel conned.
