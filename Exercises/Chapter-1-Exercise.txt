@@ -1,0 +1,12 @@
+﻿1. Explain the differences between the markup of a page in Visual Studio and the final HTML page in the browser.
+	a. The markup of the page in VS will contain the asp server controls which get sent to the server and processed into pure HTML which is then sent to the browser.  There won't be any server controls visible in the browser Source Code.
+	ANSWER: Correct but could have used the terms Raw code / unprocessed code
+2. Imagine you have a number of HTML fragments that you expect to use a lot throughout the site.  What's the best way to make these fragments available in VS?
+	a. They can be added into the Toolbox if they are large chunks of code.  If they are small they can be set up as Code Snippets.
+	ANSWER: Adding to Toolbox is correct.
+3. Name 3 ways you can reset some or all of the IDE customization settings.
+	a. Dunno.  Skipped this because it's really not important.
+	ANSWER: Setting > Reset Window Layout.  Right click Toolbox > Reset Toolbox.  Tools > Import and Export Settings.
+4. If you want to change the property of a control on your page, for example the text of a button, which two options do you have available to make the change?
+	a. You can add this into the Text attribute directly in the Source/Markup view.  Or you can edit it in the Properties window which will adjust the markup for you automatically.
+	ANSWER: Correct.
