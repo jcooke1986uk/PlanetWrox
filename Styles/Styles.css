@@ -1,0 +1,39 @@
+* {
+    font-family: Arial;
+}
+
+header {
+    background-color: #c0c0c0;
+    height: 86px;
+    width: 844px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+#PageWrapper {
+    width: 844px;
+    margin: auto;
+}
+
+nav {
+    width: 844px;
+}
+
+section#MainContent {
+    float: left;
+    width: 664px;
+}
+
+aside {
+    background-color: gray;
+    float: left;
+    width: 180px;
+}
+
+footer {
+    background-color: #c0c0c0;
+    clear: both;
+    width: 844px;
+}
