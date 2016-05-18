@@ -21,11 +21,27 @@ nav {
     width: 844px;
 }
 
+/*#region Main Content*/
 section#MainContent {
     float: left;
     width: 664px;
 }
 
+    section#MainContent a {
+        color: #4cff00;
+        text-decoration: underline;
+    }
+
+        section#MainContent a:visited {
+            color: #FF0000;
+            text-decoration: underline;
+        }
+
+        section#MainContent a:hover {
+            color: #FFA500;
+            text-decoration: underline;
+        }
+/*#endregion*/
 aside {
     background-color: gray;
     float: left;
