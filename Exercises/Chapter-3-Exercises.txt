@@ -1,0 +1,30 @@
+﻿1.  What is the main benefit of using an external style rather than embedded style sheets?
+	a. I can't pick one main benefit.  Easier to maintain.  Reusable.  Quicker page loads with styles separate.
+	ANSWER: Can be aplied to the entire site.
+
+2. Write a CSS rule that chagnes the appearance of all headings at level one (h1) in your page to the following:
+	2.1 The heading uses an Arial font face.
+	2.2 The heading should be blue.
+	2.3 The heading must have a font size of 18 pixels.
+	2.4 The heading has a blue, thin border at the top and left side.
+		a. h1 {
+				border-top: 1px blue solid;
+				border-right: none;
+				border-bottom: none;
+				border-left: 1px blue solid;
+				color: blue;
+				font-family: Arial;
+				font-size: 18px;
+			}
+		ANSWER: Good but border right and bottom are redundant.
+
+3. Which of the two following rules is easier to reuse across pages in your website?  Can you explain why?
+	3.1 #MainContent { border: 1px solid Blue; }
+	3.2 .BoxWithBorders { border: 1px solid Blue; }
+	2 is easier to reuse because it is a class not an ID, this means it can be reused multiple times on the same page.  It's name is also more descriptive letting people know at a glance what it is for.
+	ANSWER: 2 because of class.  Doesn't mention anything about better naming conventions.
+
+4. VS enables you to attach an external style sheet to a page in a number of differnt ways.  Can you name two differnt ways to do this?
+	If it already exists you can drag in from the Solution Explorer on to the page.
+	Or you can be a proper developer and write it in yourself. (Touchy much!)
+	ANSWER: Type it in the code.  Drag from Solution Explorer into head in Markup mode.  Drap from Solution Explorer onto page in design mode.
