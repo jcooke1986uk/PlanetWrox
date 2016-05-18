@@ -1,0 +1,61 @@
+* {
+    font-family: Arial;
+}
+
+header {
+    background-color: #c0c0c0;
+    height: 86px;
+    width: 844px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.Introduction {
+    font-style: italic;
+    color: #0033CC;
+}
+
+#PageWrapper {
+    width: 844px;
+    margin: auto;
+}
+
+nav {
+    width: 844px;
+}
+
+/*#region Main Content*/
+section#MainContent {
+    float: left;
+    width: 664px;
+}
+
+    section#MainContent a {
+        color: #4cff00;
+        text-decoration: underline;
+    }
+
+        section#MainContent a:visited {
+            color: #FF0000;
+            text-decoration: underline;
+        }
+
+        section#MainContent a:hover {
+            color: #FFA500;
+            text-decoration: underline;
+        }
+/*#endregion*/
+aside {
+    background-color: gray;
+    float: left;
+    width: 180px;
+}
+
+footer {
+    background-color: #c0c0c0;
+    clear: both;
+    width: 844px;
+}
