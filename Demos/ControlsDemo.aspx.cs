@@ -11,4 +11,9 @@ public partial class ControlsDemo : System.Web.UI.Page
     {
 
     }
+
+    protected void SubmitButton_Click(object sender, EventArgs e)
+    {
+        Result.Text = "Your name is " + YourName.Text;
+    }
 }
