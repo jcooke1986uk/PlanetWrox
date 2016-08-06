@@ -1,0 +1,23 @@
+﻿1.  Name the machanism that enables server controls to maintain their state.
+	a. The State Engine
+	ANSWER: Apparently it's the View State (I don't get why it's not the State Engine)
+
+2. How is the ASP.NET run time able to keep track of control state between postbacks?
+	a. The information is placed in the hidden field VIEWSTATE, posted to the server and sent back from the server.
+	ANSWER: Good but keep in mind that it's _VIEWSTATE with a leading underscore.
+
+3.  Name a difference between an <asp:DropDownList> and an <asp:ListBox>
+	a.  Not too sure so I'll take a guess.  The ListBox is HTML based so will produce a <select> and can only have its list contents hand coded rather than done throught the wizard/box thing.
+	ANSWER: ListBox is multiselect and is capable of displaying all items at once.  Dropdown is one item at a time and single select
+
+4. What property do you need to cause a postback to the server when you change the checked state of a CheckBox in the browser?
+	a. CheckBox.Change
+	ANSWER: Autopostback needs to equal True
+
+5. Many server controls have a common set of properties that affects their looks at run time.  Name three properties that change styling elements such as color, borders, and size.
+	a. Wouldn't know as I use CSS.
+	ANSWER: BackColor ForeColor BorderColor BorderStyle BorderWidth
+
+6. Instead of setting individual control properties like BackColor and ForeColor, it's better to set a single CSS-related property.  What's the name of this property and what benefit does it give you?
+	a. Don't understand the question.
+	ANSWER: CssClass property to set a class name which can be used in an external CSS file.
