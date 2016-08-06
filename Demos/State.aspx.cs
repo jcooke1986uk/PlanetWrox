@@ -5,15 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class ControlsDemo : System.Web.UI.Page
+public partial class Demos_State : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
 
-    protected void SubmitButton_Click(object sender, EventArgs e)
+    protected void SetDate_Click(object sender, EventArgs e)
     {
-        Result.Text = "Your name is " + YourName.Text;
+        Label1.Text = DateTime.Now.ToString();
+        Label2.Text = DateTime.Now.ToString();
     }
 }
