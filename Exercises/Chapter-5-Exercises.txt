@@ -1,0 +1,19 @@
+﻿1.  Considering the fact that the oldest person in the world lived to be 122, what's the best numeric data type to store a person's age?  Bonus points if you come up with an even better alternative to store someone's age.
+	a. byte
+	ANSWER: Byte is correct (sbyte is possible too but also allows for negative numbers, so not really suitable for a persons age.)  Also it would be best not to store an age but to store a date of birth which can be used to calculate the age based on the current date.  This will always be correct and not have to be updated manually.
+
+2.  What does the following code do:
+	DeleteButton.Visible = !DeleteButton.Visible;
+	a. Checks if the DeleteButton is visible and if so, sets it to Not be visible.
+	ANSWER: Sort of correct.  This actually toggles the visibility of the DeleteButton setting it one way or the other depending on the current state.
+
+3.  Give the following Person class, what would the code look like for a new Student class that contains a string property called StudentId?  Make use of inheritance to create this new class.
+	public class Person
+	{
+		public string Name { get; set; }
+	}
+	a. public class Student : Person
+	{
+		public int StudentId { get; set; }
+	}
+	ANSWER: Correct except the answer has StudentId as a string.  I assumed it would only be numbers - suppose that would depend on how the ID's are done per project.
