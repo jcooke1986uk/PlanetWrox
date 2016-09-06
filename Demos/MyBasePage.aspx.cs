@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Login : BasePage
+public partial class Demos_MyBasePage : BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
