@@ -1,0 +1,25 @@
+﻿1.  What's the difference between a ContentPlaceHolder and a Content control?  In what types of page do you use which one?
+	a. Content controls are inserted into ContentPlaceHolders.  ContentPlaceHolders are used in master pages and template pages.
+	ANSWER: The ContentPlaceHolder should be in the masterpage and defines a region that content pages fill.  Content controls should be placed in a content page which is based on the master page.
+
+2.  How do you hook up a Content control in a content page to the ContentPlaceHolder in the master page?
+	a.  With a corresponding ID.
+	ANSWER: <asp:Content ID="Content1" ContentPlaceHolderID="IdOfContentPlaceHolder" runat="Server"></asp:Content>
+
+3.  Imagine you have created a skin that gets applied to all buttons in your site with the following skin definition:
+		<asp:Button runat="Server" CssClass="MyButton"/>
+		The imaginary CSS class MyButton sets the background color of the button to black and the foreground color to white.  To draw attention to a specific button in a page, you decide to give it a red background instead.  Which options do you have to control the look of a single button?
+			a. You can turn off Theming altogether for the button.  You can add a SkinID to the button with a specific Skin in the skin file.  You could apply inline styles.
+			ANSWER: Correct but inline styles may not overwrite.  First two answers are fine.
+
+4.  Explain the difference between setting the Theme property and the StyleSheetTheme property for a page?
+	a.
+	ANSWER: StyleSheetTheme is applied early in the page life cycle so controls on the page can override these settings. Themes override any settings on the controls.
+
+5.  Name three different ways to set the Theme property for a page and explain the differences between the options?
+	a.
+	ANSWER: Set the theme in the @ Page directive so it applies to that page only.  Set the theme attribute of the <pages> element in the web.config to apply a theme to all pages.  Finally you can set the theme programmatically in the PreInit event of the Page class.  This can be done per page or in a central location such as a basepage.
+
+6.  What's the main reason for implementing a base page in your website?
+	a. For consistent layout.
+	ANSWER: To centralise and share behaviour.
