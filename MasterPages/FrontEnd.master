@@ -7,14 +7,26 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div id="PageWrapper">
+            <header><a href="/"></a></header>
+            <nav>Menu goes here</nav>
+            <section id="MainContent">
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
+            </section>
+            <aside id="Sidebar">
+                <div>
+                    Select a Theme <br />
+                    <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
+                        <asp:ListItem>Monochrome</asp:ListItem>
+                        <asp:ListItem>DarkGrey</asp:ListItem>
+                    </asp:DropDownList></div>
+            </aside>
+            <footer>Footer goes here</footer>
+        </div>
     </form>
 </body>
 </html>
