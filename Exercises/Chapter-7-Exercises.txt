@@ -1,0 +1,14 @@
+﻿1.  The TreeView control exposes a number of style properties that enable you to change items in the tree.  Which property do you need to change if you want to influence the background color of each item in the tree?  What's the best way to change the background color?
+	a. The property is background-color and the best way to do this is in a separate CSS file targeting the items in the menu
+	ANSWER: <NodeStyle BackColor="White"/> results in inline css.
+			Doing it in css is better by defining a CssClass="classname" on the element.
+
+2.  What options do you have to redirect a user to another page programmatically? What's the difference between them?
+	a.	Response.Redirect.  This redirects the page by requesting a new page from the server.  Any parameters passed in the query string will be visible to the user in the new url.  This is classed as a temporary redirect and the old page is still accessible and indexable.
+		Response.RedirectPermanent.  This redirects the page by requesting a new page from the server.  Any parameters passed in the query string will be visible to the user in the new url.  This is classed as a Permanent redirect and the old page will stop being indexed by search engines.
+		Server.Transfer.  This redirects the page from the server.  A new page isn't request, new content is requested.  The page URL does not change.
+	ANSWER: 
+
+3.  You can use the TreeView controls in two different ways: either as a list with items and sub items that can be collapsed and expanded by clicking them, or as a static list showing all the items, with no way to collapse or expand.  What property do you need to set on the control to prevent users from expanding or collapsing items in the tree?
+	a. Not sure, total guess collapse=false
+	ANSWER: So close and good guess.  ShowExpandCollapse=false
