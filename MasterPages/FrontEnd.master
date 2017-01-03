@@ -35,7 +35,7 @@
                     </asp:DropDownList>
                     <br />
                     <br />
-                    <Wrox:Banner ID="Banner1" runat="server" />
+                    <Wrox:Banner ID="Banner1" runat="server" DisplayDirection="Vertical" />
                     <br />
                 </div>
             </aside>
