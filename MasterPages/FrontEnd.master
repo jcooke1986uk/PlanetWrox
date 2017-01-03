@@ -32,7 +32,12 @@
                     <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
                         <asp:ListItem>Monochrome</asp:ListItem>
                         <asp:ListItem>DarkGrey</asp:ListItem>
-                    </asp:DropDownList></div>
+                    </asp:DropDownList>
+                    <br />
+                    <br />
+                    <Wrox:Banner ID="Banner1" runat="server" DisplayDirection="Vertical" />
+                    <br />
+                </div>
             </aside>
             <footer>Footer goes here</footer>
         </div>

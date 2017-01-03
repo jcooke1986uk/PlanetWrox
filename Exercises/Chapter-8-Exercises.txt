@@ -1,0 +1,31 @@
+﻿1. In this chapter you saw how to create a standard property and a View State property.  What is the main difference between the two?  And what are the disadvantages of each of them?
+	a. Standard properties are lost when a postback occurs but view state properties are not because they are sent along with the postback.
+	Disadvantages of standard properties: they are not retained after a postback.
+	Disadvantages of View State properties: they can make the page size larger so it is best to only save small bits of information in a View state.
+	ANSWER:
+	
+2. Currently, the DisplayDirection property of the Banner control doesn't maintain its state across postbacks.  Change to code for the property so it is able to maintain its state using the ViewState collection, similar to how NavigateUrl maintains its vlue.
+	a.    public Direction DisplayDirection {
+        get
+        {
+            object _displayDirection = ViewState["DisplayDirection"];
+            if (_displayDirection != null)
+            {
+                return (Direction)_displayDirection;
+            }
+            else
+            {
+                return Direction.Horizontal; //Return to a default value
+            }
+        }
+        set
+        {
+            ViewState["DisplayDirection"] = value;
+        }
+    }
+	ANSWER: All correct.
+	
+3. What are the two main benefits of using a custom enumeration like Direction over built-in types like System.Byte or String?
+	a. They can be given a readable name while the system still uses a numeric value.
+	b.
+	ANSWER: Following on from a > Intellisense helps you select the correct item.  Also the compiler helps with spelling errors so you cannot type Direction.Vrtical rather than .Vertical.
