@@ -136,3 +136,7 @@ footer
 img {
     border: none;
 }
+
+.ErrorMessage {
+    color: red;
+}

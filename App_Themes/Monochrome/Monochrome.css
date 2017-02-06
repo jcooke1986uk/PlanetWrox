@@ -234,3 +234,7 @@ a.level2
 img {
     border: none;
 }
+
+.ErrorMessage {
+    color: red;
+}
